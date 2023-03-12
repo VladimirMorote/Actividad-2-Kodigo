@@ -5,25 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas en HTML</title>
+    <link rel="stylesheet" type="text/css" href="producto.css">
+    <title>Formulario Producto</title>
 </head>
 
 <body>
 
     <fieldset>
         <legend>Registro de producto</legend>
-        Nombre <br />
-        <input type="text" name="Codigo:" value="" />
-        <br />
-        Apellidos <br />
-        <input type="text" name="Descripcion:" value="" />
-        <br />
-        DNI <br />
-        <input type="text" name="dni" value="" size="10" maxlength="9" />
+        <form>
+            <ul class="wrapper">
+                <li class="form-row">
+                    <label for="codigo">Codigo:</label>
+                    <input type="text" id="codigo">
+                </li>
+                <li class="form-row">
+                    <label for="descripcion">Descripcion: </label>
+                    <input type="text" id="descripcion">
+                </li>
+                <li class="form-row">
+                    <label for="cod-barras">Codigo de barra: </label>
+                    <input type="text" id="cod-barras">
+                </li>
+                <li class="form-row">
+                    <label for="prec-unitario">Precio unitario: </label>
+                    <input type="text" id="prec-unitario">
+                </li>
+                <li class="form-row">
+                    <label for="stock">Stock: </label>
+                    <input type="text" id="stock">
+                </li>
+                <li class="form-row">
+                    <label for="preveedor">Proveedor: </label>
+                    <input type="text" id="proveedor">
+                </li>
+
+                <li class="form-btn">
+                    <label for="Estado">Estado: </label>
+                    <button type="submit"></button>
+                </li>
+
+
+
+                <li class="form-ctg">
+                    <label for="Categoria">Categoria:</label><br />
+                    <select id="categoria" >
+                        <option value="Categoria">Categoria 1</option>
+                        <option value="Categoria">Categoria 2</option>
+                        <option value="Categoria" selected="true">Categoria 3</option>
+                    </select><br />
+                </li>
+
+
+                
+
+
+                <li class="form-row">
+                    <button type="submit">Cancelar</button>
+                </li>
+
+                <li class="form">
+                    <button type="submit">Guardar</button>
+                </li>
+
+            </ul>
+        </form>
+
+
+
+
     </fieldset>
-
-    <input type="button" name="guardar" value="Guardar" />
-
-</body>
-
-</html>

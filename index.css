@@ -1,0 +1,32 @@
+table,th,td {
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+
+table {
+    width: 100%;
+} 
+
+h3 {
+    text-align: center;
+}
+
+td,th {
+    text-align: center;
+}
+.addbtn{
+    text-align: center;
+    background-color: rgb(71, 193, 71);
+    border-color: aliceblue;
+    color: white;
+}
+.editbtn{
+    background-color: rgb(71, 148, 193);
+    border-color: aliceblue;
+    color: white;
+}
+.deletebtn{
+    background-color: rgb(213, 33, 33);
+    border-color: aliceblue;
+    color: white;
+}
